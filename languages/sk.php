@@ -3,7 +3,7 @@
 l::set(array(
   
   // global 
-  'ok' => 'ok',
+  'ok' => 'Ok',
   'cancel' => 'Zrušiť',
   'nochanges' => 'Bez zmeny',
 
@@ -27,7 +27,7 @@ l::set(array(
   // dashboard
   'dashboard.edit' => 'Upraviť',
   'dashboard.content' => 'Obsah',
-  'dashboard.content.empty' => 'Táto stránka nemá obsahu',
+  'dashboard.content.empty' => 'Na tejto stránke nieje žiaden obsah',
   'dashboard.files' => 'Súbory',
   'dashboard.template' => 'Šablóna',
   'dashboard.stats.images' => 'Obrázky', 
@@ -43,14 +43,14 @@ l::set(array(
   'home.warning.permissions.title' => 'Práva',
   'home.warning.permissions.text' => 'Práva pre zložku z obsahom niesú správne. Prosím zmente práva pre všetky zložky na <strong>0755</strong> a všetky súbory na <strong>0666</strong>',
   'home.warning.blueprints.title' => 'Plány',
-  'home.warning.blueprints.text' => 'There are no blueprints available for the following templates<br /> Read more about <a href="http://getkirby.com/panel/blueprints">how to install blueprints for your templates</a>',
+  'home.warning.blueprints.text' => 'Žiadne plány pre túto šablónu niesu k dispozícii <br /> Viac info na <a href="http://getkirby.com/panel/blueprints">ako pridať plány pre šablóny</a>',
   'home.warning.thumbs.title' => 'Náhľady',
   'home.warning.thumbs.text' => 'Prosím vytvorte priečinok <strong>thumbs</strong> v hlavnej zložke stránky a zmente jej práva na <strong>0755</strong>',
   
   // siteinfo
   'siteinfo.button' => 'Uložiť',
   'siteinfo.errors.title' => 'Prosím priraďte názov',
-  'siteinfo.errors.permissions' => '<strong>content/site.txt</strong> niesú zapisovatelné <br />Prosím zmente ich práva a skúste znova.',
+  'siteinfo.errors.permissions' => '<strong>content/site.txt</strong> nieje zapisovatelný <br />Prosím zmente práva a skúste znova.',
   
   // content form 
   'content.save' => 'Uložiť',
@@ -60,11 +60,11 @@ l::set(array(
   
   // no content available
   'nocontent.title' => 'Bez obsahu',
-  'nocontent.text' => 'Pre túto stránku neexistuje obsah.',
+  'nocontent.text' => 'Na tejto stránke nieje žiaden obsah',
     
   // pages
-  'pages.title' => 'Viditeľné stránky',
-  'pages.title.home' => 'Stránky',
+  'pages.title' => 'Viditeľné podstránky',
+  'pages.title.home' => 'Viditeľné stránky',
   'pages.home' => 'Domov',
   'pages.sort' => 'Zoradiť',
   'pages.add' => 'Pridať',
@@ -75,11 +75,11 @@ l::set(array(
   'pages.no.invisible' => 'Žiadne neviditelné stránky',
   'pages.moved' => 'Stránka bola premiestnená',
   'pages.sorted' => 'Stránka bola zoradená',
-  'pages.show.more' => 'Zobraz viac',
-  'pages.show.less' => 'Zobraz menej',
-  'pages.errors.notfound' => 'Stránka nemohla byť nájdena',
+  'pages.show.more' => 'Ukáž viac',
+  'pages.show.less' => 'Ukáž menej',
+  'pages.errors.notfound' => 'Stránku sa nepodarilo nájsť',
   'pages.errors.move' => 'Stránka nemohla byť premiestnená',
-  'pages.errors.sort' => 'Všetky stránky nemohli byť zoradené',
+  'pages.errors.sort' => 'Nie všetky stránky mohli byť zoradené',
   'pages.errors.nosort' => 'Nieje čo zoradiť',
 
   // no subpages allowed
@@ -100,14 +100,14 @@ l::set(array(
   'pages.add.success' => 'Stránka bola vytvorená',
 
   // update page
-  'pages.update.errors.title' => 'Prosím zadajte názov',
+  'pages.update.errors.title' => 'Prosím vyplnte správne všetky polička',
     
   // delete page  
   'pages.delete.title' => 'Odstrániť stránku',
   'pages.delete.button' => 'Odstrániť',
   'pages.delete.errors.homepage' => 'Nemôžete odstrániť domovsku stránku',
   'pages.delete.errors.errorpage' => 'Nemožete odstrániť stránku z chybovým hlásením',
-  'pages.delete.errors.subpages' => 'Táto stránka ma podstránky. Prosím odstránte ich najskôr.',
+  'pages.delete.errors.subpages' => 'Táto stránka ma podstránky. Prosím najskôr ich odstránte .',
   'pages.delete.errors.permissions' => 'Stránka sa nedala odstrániť',
   'pages.delete.success' => 'Stránka bola odstránená',
 
@@ -146,40 +146,41 @@ l::set(array(
   'files.edit.title' => 'Upraviť súbor',
   'files.edit.filename' => 'Názov súboru (bez prípony)',
   'files.edit.button' => 'Uložiť',
+  'files.edit.errors.filename' => 'Prosím vložte platný názov súboru',
   'files.edit.errors.notfound' => 'Súbor sa nepodarilo nájsť',
-  'files.edit.errors.exists' => 'Súbor s tým názvom už existuje',
+  'files.edit.errors.exists' => 'Súbor s rovnaký názvom už existuje',
   'files.edit.errors.permissions' => 'Súbor sa nepodarilo premenovať',
   'files.edit.success' => 'Súbor uložený',
 
   // replace file
   'files.replace.title' => 'Nahradiť súbor',
   'files.replace.file' => 'Súbor',
-  'files.replace.choose' => 'Prosím zvolte nový subor z prečítača…',
+  'files.replace.choose' => 'Prosím zvolte nový subor z počítača…',
   'files.replace.button' => 'Nahradiť',
   'files.replace.errors.notfound' => 'Súbor sa nepodarilo nájsť',
   'files.replace.success' => 'Súbor bol nahradený',
 
   // upload file
   'files.upload.title' => 'Nahrať nový súbor',
-  'files.upload.choose' => 'Prosím zvolte subor z prečítača…',
+  'files.upload.choose' => 'Prosím zvolte subor z počítača…',
   'files.upload.button' => 'Nahrať',
       
   // login  
   'login.button' => 'Prihlásit sa',
   'login.username' => 'Meno',
   'login.password' => 'Heslo',
-  'login.error' => 'Invalid meno alebo Heslo',
+  'login.error' => 'Neplatné meno alebo Heslo',
   'login.success' => 'Úspešné prihlásenie',
   'login.error.browser.title' => 'Použiváťe zastaralý internetovy prehliadač',
-  'login.error.browser.text' => 'Prosím použite najnovšiu verziu prehliadača Google Chrome, Firefox, Safari or Internet Explorer.',
+  'login.error.browser.text' => 'Prosím použite najnovšiu verziu prehliadača Google Chrome, Firefox, Safari alebo Internet Explorer.',
   
   // upload
   'upload.errors.missing-file' => 'Súbor sa nepodralilo násť',
-  'upload.errors.file-exists' => 'Súbor už existuje a nemôž byť nahradený',
+  'upload.errors.file-exists' => 'Súbor už existuje a nemôže byť nahradený',
   'upload.errors.invalid-upload' => 'Nahrávanie zlyhalo',
   'upload.errors.too-big' => 'Súbor je príliš velký',
   'upload.errors.invalid-file' => 'Typ súboru nieje povolený',
-  'upload.errors.move-error' => 'Súbor sa nepodarilo preniesť na server',
+  'upload.errors.move-error' => 'Súbor sa nepodarilo nahrať na server',
   'upload.success' => 'Nahratie úsprešné',
 
   // writer
@@ -187,6 +188,25 @@ l::set(array(
   'writer.errors.write' => 'Nepodarilo sa pridať dáta',
   'writer.success' => 'Súbor bol uložený',
   
-));
+  // form buttons
+  'form.buttons.h1' => 'h1',
+  'form.buttons.h2' => 'h2',
+  'form.buttons.h3' => 'h3',
+  'form.buttons.bold' => 'tučne',
+  'form.buttons.bold.sample' => 'tučný text',
+  'form.buttons.italic' => 'nakloniť',
+  'form.buttons.italic.sample' => 'naklonení text',
+  'form.buttons.link' => 'link',
+  'form.buttons.email' => 'email',
 
-?>
+  'form.overlay.link.title' => 'Vložiť Link',
+  'form.overlay.link.link' => 'Link',
+  'form.overlay.link.text' => 'Text Linku (nepovinné)',
+  'form.overlay.link.button' => 'Vložiť Link',
+
+  'form.overlay.email.title' => 'Vložiť Email',
+  'form.overlay.email.link' => 'Emailová Adresa',
+  'form.overlay.email.text' => 'Text Linku (nepovinné)',
+  'form.overlay.email.button' => 'Vložiť Email',
+
+));
